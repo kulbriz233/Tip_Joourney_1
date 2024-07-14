@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+  }
+  
+  .CU-Section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../bobablue.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  .overlay {
+    padding: 20px;
+    padding-right: 200px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .overlay h1 {
+    font-size: 6em;
+    font-weight: 800;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .overlay p {
+    font-size: 1.4vw;
+    margin-bottom: 20px;
+    color: white !important;
+    line-height: 1.5;
+    animation: slideInLeft 1.2s ease-in-out;
+  }
+  
+  .cta-button {
+    background-color: #3083ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideInLeft 1.4s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #000000;
+  }
+  
+  .c-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .contact-box .left, .contact-box .right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .left iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .right {
+    padding: 20px;
+  }
+  
+  .right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .cu-field {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .cu-field:focus {
+    border-color: #ff7f50;
+  }
+  
+  .btn {
+    background-color: #3083ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #005be4;
+    color: #fff;
+  }
+  
+  .CU-Section3 {
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .overlay h1 {
+      font-size: 4rem;
+    }
+  
+    .overlay p {
+      font-size: 1rem;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
