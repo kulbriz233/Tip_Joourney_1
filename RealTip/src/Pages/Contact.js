@@ -9,13 +9,13 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="CU-Section1">
         <div className="overlay">
-          <h1>Get in Touch with Us</h1>
+          <h1>Get in Touch <br/> with Us</h1>
           <p>
-            We would love to hear from you. Whether you have a question about features,
-            pricing, need a demo, or anything else, our team is ready to answer all your questions.
+            We would love to hear from you.<br/> Whether you have a question about features,
+            pricing, need <br/> a demo, or anything else, our team is ready to answer all your questions.
           </p>
           <button className="cta-button" onClick={handleScrollToContact}>Contact Us</button>
         </div>
@@ -37,20 +37,20 @@ const Contact = () => {
             <form action="">
               <h2>Contact Us</h2>
               <label>Full Name</label>
-              <input type="text" className="field" placeholder="Your Name" />
+              <input type="text" className="cu-field" placeholder="Your Name" />
               <label>Email</label>
-              <input type="text" className="field" placeholder="Your Email" />
+              <input type="email" className="cu-field" placeholder="Your Email" />
               <label>Phone</label>
-              <input type="text" className="field" placeholder="Phone" />
+              <input type="text" className="cu-field" placeholder="Phone" />
               <label>Enter Message</label>
-              <textarea placeholder="Message" className="field"></textarea>
-              <button className="btn">Send</button>
+              <textarea placeholder="Message" className="cu-field"></textarea>
+              <button type="submit" className="btn">Send</button>
             </form>
           </div>
         </div>
       </div>
-      <div className='CU-Section3'></div>
-    </>
+      <div className="CU-Section3"></div>
+    </div>
   );
 }
 

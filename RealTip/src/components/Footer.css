@@ -1,5 +1,4 @@
 body {
-  line-height: 1.5;
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,17 +21,17 @@ body {
 
 .Footer {
   background-color: #3083ff;
-  padding: 70px 0;
+  padding: 5px 0;
 }
 
 .footer-col {
   flex: 1;
   padding: 15px;
-  min-width: 200px; /* Ensures columns don't get too narrow */
+  min-width: 200px;
 }
 
 .ft-1 {
-  flex: 2; /* Double the size of other columns */
+  flex: 2; 
 }
 
 .ft-2, .ft-3 {

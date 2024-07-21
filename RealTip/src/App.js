@@ -1,4 +1,4 @@
-import './App.css';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,27 +9,34 @@ import About from './Pages/About';
 import Products from './Pages/Products';
 import Booking from './Pages/Booking';
 import Admin from './Pages/Admin';
-
+import Login from './components/Login';
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-        <Route path='/' element={<Navigate to='/home' />} />
-          <Route path='/home' element={<Home />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-          <Route path='/events' element={<Events />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/products' element={<Products />}></Route>
-          <Route path='/booking' element={<Booking />}></Route>
-          <Route path='/admin' element={<Admin />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+  const [isAuth, setIsAuth] = useState(false);
 
-    </>
+  useEffect(() => {
+    const auth = localStorage.getItem('isAuth');
+    if (auth === 'true') {
+      setIsAuth(true);
+    }
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/admin" element={isAuth ? <Admin setAuth={setIsAuth} /> : <Navigate to="/login" />} />
+        <Route path="/login" element={<Login setAuth={setIsAuth} />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

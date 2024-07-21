@@ -16,8 +16,8 @@
 }
 
 .content .title {
-  font-size: 6vw;
-  font-weight: bold;
+  font-size: 6em;
+  font-weight: 800;
   margin-bottom: 20px;
   color: white;
 }
@@ -31,7 +31,7 @@
 
 .content .cta-button {
   background-color: white;
-  color:#007bff ;
+  color: #007bff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -107,7 +107,7 @@
   margin-bottom: 20px;
 }
 
-.cta-button {
+.text-container .cta-button {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -117,11 +117,10 @@
   font-size: 16px;
 }
 
-.cta-button:hover {
+.text-container .cta-button:hover {
   background-color: #0056b3;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .section2 {
     flex-direction: column;
@@ -141,7 +140,7 @@
     font-size: 16px;
   }
 
-  .cta-button {
+  .text-container .cta-button {
     font-size: 14px;
   }
 }
@@ -155,42 +154,42 @@
     font-size: 14px;
   }
 
-  .cta-button {
+  .text-container .cta-button {
     font-size: 12px;
   }
 }
 
 .section3 {
   text-align: center;
-  background-color: #339af0; /* Adjust background color as needed */
+  background-color: #339af0; 
   padding: 40px 20px;
 }
 
-.header h1 {
+.section3 .header h1 {
   font-size: 36px;
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
 }
 
-.header p {
+.section3 .header p {
   font-size: 18px;
   color: white;
   margin-bottom: 40px;
 }
 
-.grid {
+.section3 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   justify-items: center;
 }
 
-.grid-item {
+.section3 .grid-item {
   text-align: center;
 }
 
-.circle {
+.section3 .circle {
   width: 150px;
   height: 150px;
   background-color: transparent;
@@ -199,13 +198,13 @@
   margin-bottom: 10px;
 }
 
-.grid-item p {
+.section3 .grid-item p {
   font-size: 16px;
   color: white;
 }
 
-.cta-button {
-  background-color: #d9534f; /* Red color */
+.section3 .cta-button {
+  background-color: #d9534f;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -215,57 +214,56 @@
   margin-top: 40px;
 }
 
-.cta-button:hover {
+.section3 .cta-button:hover {
   background-color: #c9302c;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .header h1 {
+  .section3 .header h1 {
     font-size: 28px;
   }
 
-  .header p {
+  .section3 .header p {
     font-size: 16px;
   }
 
-  .grid {
+  .section3 .grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
-  .circle {
+  .section3 .circle {
     width: 120px;
     height: 120px;
   }
 
-  .grid-item p {
+  .section3 .grid-item p {
     font-size: 14px;
   }
 
-  .cta-button {
+  .section3 .cta-button {
     font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .header h1 {
+  .section3 .header h1 {
     font-size: 24px;
   }
 
-  .header p {
+  .section3 .header p {
     font-size: 14px;
   }
 
-  .circle {
+  .section3 .circle {
     width: 100px;
     height: 100px;
   }
 
-  .grid-item p {
+  .section3 .grid-item p {
     font-size: 12px;
   }
 
-  .cta-button {
+  .section3 .cta-button {
     font-size: 12px;
   }
 }
@@ -276,27 +274,27 @@
   padding: 40px 20px;
 }
 
-.header h1 {
+.section4 .header h1 {
   font-size: 36px;
   font-weight: bold;
   color: black;
   margin-bottom: 20px;
 }
 
-.header p {
+.section4 .header p {
   font-size: 18px;
   color: #333;
   margin-bottom: 40px;
 }
 
-.reviews {
+.section4 .reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
 
-.review-card {
+.section4 .review-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,75 +305,69 @@
   text-align: left;
 }
 
-.review-image {
+.section4 .review-image {
   width: 150px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.review-text {
+.section4 .review-text {
   color: #333;
   margin-left: 20px;
 }
 
-.review-text p {
+.section4 .review-text p {
   margin: 10px 0;
 }
 
-.stars {
+.section4 .stars {
   color: #ffc107;
   margin-top: 10px;
 }
 
 @media (min-width: 768px) {
-  .reviews {
+  .section4 .reviews {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
   }
-  .content .title {
-    font-size: 70px;
-  }
 
-  .review-card {
+  .section4 .review-card {
     flex-direction: row;
     max-width: 100%;
   }
 
-  .review-image {
+  .section4 .review-image {
     margin-bottom: 0;
     margin-right: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .header h1 {
+  .section4 .header h1 {
     font-size: 28px;
   }
-  .content .title {
-    font-size: 50px;
-  }
 
-  .header p {
+  .section4 .header p {
     font-size: 16px;
   }
 
-  .review-card {
+  .section4 .review-card {
     max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .header h1 {
+  .section4 .header h1 {
     font-size: 24px;
   }
 
-  .header p {
+  .section4 .header p {
     font-size: 14px;
   }
 
-  .review-card {
+  .section4 .review-card {
     max-width: 100%;
   }
 }

@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(48, 131, 255, 0.8);
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ body {
   cursor: pointer;
 }
 
-/* Navigation Links */
+
 .nav-links ul {
   list-style: none;
   display: flex;
@@ -81,22 +81,6 @@ body {
   border-radius: 4px;
 }
 
-.menu-button {
-  background: rgb(38, 114, 255);
-  color: #e0e0e0;
-  margin: 20px, 2px, 3px, 4px;
-  border: gray solid 2px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.menu-button span {
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: transform 0.3s ease;
-}
-/* Responsive Styles */
 @media (max-width: 1168px) {
   .menu-button {
     display: block;
@@ -136,6 +120,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .menu-button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
 }
 
 .nav-links ul li a {
@@ -159,3 +147,22 @@ body {
 .nav-links ul li a.active::after {
   transform: scaleX(1);
 }
+
+.menu-button {
+  background-color: #fff;
+  border: px solid #ccc;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #acacac;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.menu-button.open {
+  color: #fc1100; 
+  font-size: 700;
+  background-color: #f0f0f0; 
+}
+
+

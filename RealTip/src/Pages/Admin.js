@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/Admin.css';
 import team2 from '../Images/bob.png';
 
-const Admin = () => {
+const Admin = ({ setAuth }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [productNames, setProductNames] = useState([]);
+  const navigate = useNavigate();
 
   const productData = {
     Cocktail: ['Margarita', 'Martini', 'Mojito'],
@@ -18,6 +20,12 @@ const Admin = () => {
     setProductNames(productData[category] || []);
   };
 
+  const handleLogout = () => {
+    setAuth(false);
+    localStorage.removeItem('isAuth');
+    navigate('/login');
+  };
+
   return (
     <div className="admin-container">
       <header className="admin-header">
@@ -25,7 +33,7 @@ const Admin = () => {
         <div className="search-bar">
           <input type="search" placeholder="Products" />
         </div>
-        <button className="logout-button">Log Out</button>
+        <button className="logout-button" onClick={handleLogout}>Log Out</button>
       </header>
       
       <main className="admin-main">
@@ -127,6 +135,7 @@ const Admin = () => {
 };
 
 export default Admin;
+
 
 // import React from 'react';
 // import '../Styles/Admin.css';

@@ -13,39 +13,38 @@ const Booking = () => {
 
     return (
         <div className='main-book'>
-            <div className="image-header" style={{ backgroundImage: `url(${headerImage})` }}>
-                <div className="header-content">
-                    <h1 className="title-header">Book Us For Your <br/>Events Now</h1>
-                    <p className="subtext">This is a brief subtext that provides additional information about the main title, and it should be around 24 words long to ensure clarity and conciseness.</p>
-                    <button className="cta-button" onClick={scrollToForm}>Make Order</button>
-                </div>
-            </div>
+            <div className="homepage">
+      <div className="content">
+        <h1 className="title">Book Us For<br /> Your Events.</h1>
+        <p className="description">
+          Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
+          ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
+        </p>
+        <button className="cta-button">Know More</button>
+      </div>
+    </div>
 
             <div className="booking-container" ref={formRef}>
                 <form className="booking-form">
                     <div>
                         <label>Your Name</label>
-                        <input type="text" />
+                        <input type="text" placeholder='Enter full name'/>
                     </div>
                     <div>
                         <label>Your Phone Number</label>
-                        <input type="text" />
+                        <input type="text" placeholder='Input phone number'/>
                     </div>
+                    <div>
                     <div>
                         <label>Email Address (Optional)</label>
-                        <input type="email" />
+                        <input type="email" placeholder='Enter Email'/>
                     </div>
                     <div>
-                        <label>Products To Order</label>
-                        <input type="text" />
+                        <label>Event Location</label>
+                        <input type='text' placeholder='Enter specific Location'></input>
                     </div>
-                    <div>
-                        <label>Quantity Of Products</label>
-                        <input type="number" />
-                    </div>
-                    <div>
                         <label>Event Date (dd/mm/yy)</label>
-                        <input type="date" />
+                        <input type="date"/>
                     </div>
                     <div>
                         <label>Event Time</label>
@@ -53,7 +52,7 @@ const Booking = () => {
                     </div>
                     <div>
                         <label>Event Details</label>
-                        <textarea rows="4"></textarea>
+                        <textarea rows="4" placeholder='Add more information about the event'></textarea>
                     </div>
                     <button type="submit">Book Us</button>
                 </form>

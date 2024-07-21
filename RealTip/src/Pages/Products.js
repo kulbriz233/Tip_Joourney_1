@@ -44,16 +44,16 @@ function Products() {
 
   return (
     <div className="product-main">
-        <div className="product-page-container">
-  <div className="product-page-content">
-    <h1 className="product-page-title">Discover Our <br /> Unique Products.</h1>
-    <p className="product-page-description">
-      Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
-      ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
-    </p>
-    <button className="product-page-cta-button">Explore More</button>
-  </div>
-</div>
+      <div className="product-page-container">
+        <div className="product-page-content">
+          <h1 className="product-page-title">Discover Our <br /> Unique Products.</h1>
+          <p className="product-page-description">
+            Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
+            ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
+          </p>
+          <button className="product-page-cta-button">Explore More</button>
+        </div>
+      </div>
 
       <div className="product-head">
         <h1>Our Cocktails</h1>
