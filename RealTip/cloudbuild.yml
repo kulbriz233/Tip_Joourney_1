@@ -1,0 +1,17 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/my-project/docimage', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/omega-signifier-427808-u1/docimage']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: [
+      'run', 
+      'deploy', 
+      'docservice', 
+      '--image', 'gcr.io/my-omega-signifier-427808-u1/docimage', 
+      '--region', 'me-central1', 
+      '--platform', 'managed'
+    ]
+
+images:
+  - 'gcr.io/my-omega-signifier-427808-u1/docimage'
