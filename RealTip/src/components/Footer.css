@@ -24,6 +24,11 @@ body {
   padding: 5px 0;
 }
 
+.Footer svg{
+  fill: #ffffff;
+  margin-top: -5px;
+}
+
 .footer-col {
   flex: 1;
   padding: 15px;

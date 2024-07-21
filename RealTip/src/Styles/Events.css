@@ -23,9 +23,9 @@
     margin: 20px 0;
     padding: 20px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(49, 111, 234, 0.418);
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
   }
   
   .event-card:hover {
@@ -57,7 +57,6 @@
     }
   }
   
-  /* Scroll Animation */
   .event-card {
     opacity: 0;
     transform: translateY(20px);
@@ -69,7 +68,6 @@
     transform: translateY(0);
   }
   
-  /* Custom scroll animation */
   @keyframes fadeInUp {
     from {
       opacity: 0;

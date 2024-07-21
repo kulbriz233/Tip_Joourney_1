@@ -10,16 +10,16 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="CU-Section1">
-        <div className="overlay">
-          <h1>Get in Touch <br/> with Us</h1>
-          <p>
-            We would love to hear from you.<br/> Whether you have a question about features,
-            pricing, need <br/> a demo, or anything else, our team is ready to answer all your questions.
-          </p>
-          <button className="cta-button" onClick={handleScrollToContact}>Contact Us</button>
-        </div>
+      <div className="homepage" id='contact'>
+      <div className="content">
+        <h1 className="title">Get In Touch <br /> with Us.</h1>
+        <p className="description">
+          Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
+          ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
+        </p>
+        <button className="cta-button" onClick={handleScrollToContact} >Reach Us</button>
       </div>
+    </div>
       <div className="c-container" ref={contactSectionRef}>
         <div className="contact-box">
           <div className="left">

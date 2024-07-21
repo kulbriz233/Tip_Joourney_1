@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import '../Styles/Events.css';
-import eventImage1 from '../Images/bob1.png';
+import eventImage1 from '../Images/bobablue1.png';
 import eventImage2 from '../Images/bob1.png';
-import eventImage3 from '../Images/bob1.png';
-import eventImage4 from '../Images/bob1.png';
+import eventImage3 from '../Images/boba.png';
+import eventImage4 from '../Images/Nonalcohol.png';
 
 const Events = () => {
   useEffect(() => {
     const handleScroll = () => {
       const cards = document.querySelectorAll('.event-card');
-      const triggerBottom = window.innerHeight / 5 * 4;
+      const triggerBottom = window.innerHeight / 5 * 5;
 
       cards.forEach(card => {
         const cardTop = card.getBoundingClientRect().top;
@@ -29,14 +29,14 @@ const Events = () => {
 
   return (
     <div className="events-container">
-      <div className="homepage">
+      <div className="homepage" id='events'>
       <div className="content">
         <h1 className="title">Tipsy <br/>Makes Every <br/>Event Special.</h1>
         <p className="description">
           Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
           ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
         </p>
-        <button className="cta-button">Know More</button>
+        <button className="cta-button">Explore Events</button>
       </div>
     </div>
       <h1 className="events-title">Events</h1>

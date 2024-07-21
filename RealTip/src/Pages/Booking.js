@@ -13,16 +13,16 @@ const Booking = () => {
 
     return (
         <div className='main-book'>
-            <div className="homepage">
-      <div className="content">
-        <h1 className="title">Book Us For<br /> Your Events.</h1>
-        <p className="description">
-          Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
-          ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
-        </p>
-        <button className="cta-button">Know More</button>
-      </div>
-    </div>
+            <div className="homepage" id='book'>
+                <div className="content">
+                    <h1 className="title">Book Us For<br /> Your Events.</h1>
+                    <p className="description">
+                    Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt<br /> 
+                    ut labore et dolore magna aliqua. <br />Ut enim ad minim veniam.
+                    </p>
+                    <button className="cta-button" onClick={scrollToForm}>Book Now</button>
+                </div>
+            </div>
 
             <div className="booking-container" ref={formRef}>
                 <form className="booking-form">
